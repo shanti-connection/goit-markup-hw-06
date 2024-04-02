@@ -59,10 +59,115 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+          <svg class="open-menu-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="open-menu-mob">
+        <div class="mob-cont-menu">
+          <button type="button" class="mob-menu-close-btn">
+            <svg class="mob-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="mob-navigation-container">
+            <nav class="mob-header-navigation">
+              <ul class="mob-header-navigation-list">
+                <li class="mob-menu-item-list">
+                  <a href="./index.html" class="menu-item mob-studio-item"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu-item-list">
+                  <a href="" class="mob-menu-item">Portfolio</a>
+                </li>
+                <li class="mob-menu-item-list">
+                  <a href="" class="mob-menu-item">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="mob-adress-container">
+          <address class="mob-contacts">
+            <ul class="mob-header-contact-list">
+              <li class="mob-header-contact-list-item">
+                <a
+                  class="mob-header-contact-link"
+                  href="tel:+110001111111"
+                  target="_blank"
+                  rel="noopener no referrer
+              nofollow"
+                  >+11(000)111-11-11</a
+                >
+              </li>
+              <li class="mob-header-contact-list-item">
+                <a
+                  class="mob-header-contact-mail"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener no referrer nofollow"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-media-links-list">
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon-mob" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon-mob" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon-mob" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-item">
+              <a
+                class="mob-media-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social-link-icon-mob" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <!-- ---------------------------- -->
       <section class="section hero">
         <div class="container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
@@ -70,7 +175,7 @@
         </div>
       </section>
       <!-- ---------------------------- -->
-      <section class="section">
+      <section class="section about-section">
         <div class="container">
           <h2 class="visually-hidden">About</h2>
           <ul class="about-item">
@@ -127,12 +232,13 @@
       </section>
       <!-- ---------------------------- -->
       <section class="section team-section">
-        <div class="container">
+        <div class="container team-tabl-container">
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="team-members">
             <li class="team-members-list">
               <img
                 class="team-members-img"
+                srcset="./images/TeamCard1@2x.jpg 2x, ./images/TeamCard1.jpg 1x"
                 src="./images/TeamCard1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -174,6 +280,7 @@
             <li class="team-members-list">
               <img
                 class="team-members-img"
+                srcset="./images/TeamCard2@2x.jpg 2x, ./images/TeamCard2.jpg 1x"
                 src="./images/TeamCard2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -215,6 +322,7 @@
             <li class="team-members-list">
               <img
                 class="team-members-img"
+                srcset="./images/TeamCard3@2x.jpg 2x, ./images/TeamCard3.jpg 1x"
                 src="./images/TeamCard3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -256,6 +364,7 @@
             <li class="team-members-list">
               <img
                 class="team-members-img"
+                srcset="./images/TeamCard4@2x.jpg 2x, ./images/TeamCard4.jpg 1x"
                 src="./images/TeamCard4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -298,15 +407,19 @@
         </div>
       </section>
       <!-- ---------------------------- -->
-      <section class="section">
-        <div class="container">
+      <section class="section product-section">
+        <div class="container product-container">
           <h2 class="section-title product-title">Our Portfolio</h2>
           <ul class="products-list">
             <li class="products-list-item">
               <div class="products-img-wrap">
                 <img
                   class="products-img"
-                  src="./images/img-portolio-1.jpg"
+                  srcset="
+                    ./images/img-portolio1@2x.jpg 2x,
+                    ./images/img-portolio1.jpg    1x
+                  "
+                  src="./images/img-portolio1.jpg"
                   alt="banking"
                   width="360"
                   height="300"
@@ -326,7 +439,11 @@
               <div class="products-img-wrap">
                 <img
                   class="products-img"
-                  src="./images/img-portolio-2.jpg"
+                  srcset="
+                    ./images/img-portolio2@2x.jpg 2x,
+                    ./images/img-portolio2.jpg    1x
+                  "
+                  src="./images/img-portolio2.jpg"
                   alt="cashless-payment"
                   width="360"
                   height="300"
@@ -346,7 +463,11 @@
               <div class="products-img-wrap">
                 <img
                   class="products-img"
-                  src="./images/img-portolio-3.jpg"
+                  srcset="
+                    ./images/img-portolio3@2x.jpg 2x,
+                    ./images/img-portolio3.jpg    1x
+                  "
+                  src="./images/img-portolio3.jpg"
                   alt="meditation-app"
                   width="360"
                   height="300"
@@ -366,7 +487,11 @@
               <div class="products-img-wrap">
                 <img
                   class="products-img"
-                  src="./images/img-portolio-4.jpg"
+                  srcset="
+                    ./images/img-portolio4@2x.jpg 2x,
+                    ./images/img-portolio4.jpg    1x
+                  "
+                  src="./images/img-portolio4.jpg"
                   alt="taxi"
                   width="360"
                   height="300"
@@ -386,7 +511,11 @@
               <div class="products-img-wrap">
                 <img
                   class="products-img"
-                  src="./images/img-portolio-5.jpg"
+                  srcset="
+                    ./images/img-portolio5@2x.jpg 2x,
+                    ./images/img-portolio5.jpg    1x
+                  "
+                  src="./images/img-portolio5.jpg"
                   alt="screen-illustrations"
                   width="360"
                   height="300"
@@ -406,7 +535,11 @@
               <div class="products-img-wrap">
                 <img
                   class="products-img"
-                  src="./images/img-portolio-6.jpg"
+                  srcset="
+                    ./images/img-portolio6@2x.jpg 2x,
+                    ./images/img-portolio6.jpg    1x
+                  "
+                  src="./images/img-portolio6.jpg"
                   alt="online-courses"
                   width="360"
                   height="300"
@@ -491,8 +624,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
-      <div class="modal">
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-open">
+      <div class="modal-mob modal">
         <button type="button" class="modal-btn">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
