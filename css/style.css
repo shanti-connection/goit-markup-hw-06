@@ -1239,7 +1239,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding-right: 15px;
         padding-left: 15px;
         }
-        
+
     .header-container {
         display: flex;
     }
@@ -1330,12 +1330,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .tab-container{
     margin: 0 auto;
-    padding: 0;
-}
-
-.about-section{
-    padding-right: 156px;
-    padding-left: 156px;
 }
 
 .about-item-title {
@@ -1398,12 +1392,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-section {
-    padding: 120px 156px;
+    padding: 120px 0;
     margin: 0 auto;
-    
-}
-
-.product-container{
     
 }
 
@@ -1417,9 +1407,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .products-list-item {
     width: calc((100% - 48px) / 3);}
-
-.footer-section{
-}
 
     .footer-container {
     flex-wrap: nowrap; 
@@ -1453,5 +1440,3 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-direction: row;
     gap: 24px;
 }
-
-
