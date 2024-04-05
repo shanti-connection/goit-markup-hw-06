@@ -39,7 +39,7 @@ button {
 }
 
 .container {
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto;
     padding-right: 16px;
     padding-left: 16px;
@@ -633,7 +633,6 @@ font-weight: 400;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
-    /*margin-bottom: 72px;*/
 }
 
 .social-media-container{
@@ -1014,7 +1013,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {
     
     .container {
-        width: 768px;
+        max-width: 768px;
         }
 
     .hero {
@@ -1235,12 +1234,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1158px) {
 
     .container {
-        width: 1158px;
+        max-width: 1158px;
         margin: 0 auto;
         padding-right: 15px;
         padding-left: 15px;
         }
-   
+        
     .header-container {
         display: flex;
     }
